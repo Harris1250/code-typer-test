@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Code Typer Speed Test</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/favicon.ico" />
+</head>
+<body>
+  <header>
+    <h1>⌨️ Code Typer Speed Test</h1>
+    <p>Test your speed & accuracy with real code snippets.</p>
+  </header>
+
+  <main>
+    <div id="code-snippet">Loading snippet...</div>
+    <textarea id="user-input" placeholder="Type the code above..."></textarea>
+
+    <div id="result">
+      <p>⏱ Time: <span id="time">0.00s</span></p>
+      <p>🎯 Accuracy: <span id="accuracy">0%</span></p>
+    </div>
+
+    <button id="restart">Try Another</button>
+  </main>
+
+  <footer>
+    <p>Made with 💻 by Muhammad Nadeem</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
