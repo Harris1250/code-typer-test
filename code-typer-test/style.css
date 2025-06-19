@@ -15,8 +15,14 @@ header {
 
 h1 {
   color: #ffbd39;
-  font-size: 2.2rem;
-  margin-bottom: 10px;
+  font-size: 2.6rem;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-top: 0;
 }
 
 main {
@@ -46,25 +52,38 @@ textarea {
   border: none;
 }
 
-#result p {
-  font-size: 1rem;
-  margin: 10px 0;
+#result {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+#result span {
+  font-weight: bold;
+  color: #ffbd39;
 }
 
 button {
   background-color: #ffbd39;
   color: #000;
-  padding: 10px 18px;
+  padding: 12px 24px;
   font-size: 16px;
   font-weight: bold;
   border: none;
   border-radius: 6px;
   cursor: pointer;
-  margin-top: 15px;
+  margin-top: 20px;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 0 10px rgba(255, 189, 57, 0.3);
 }
 
 button:hover {
   background-color: #ffc107;
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(255, 189, 57, 0.5);
 }
 
 footer {
