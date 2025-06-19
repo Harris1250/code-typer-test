@@ -1,9 +1,16 @@
-body {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
   font-family: 'Segoe UI', sans-serif;
   background-color: #0f0f0f;
   color: #fff;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
@@ -26,9 +33,11 @@ header p {
 }
 
 main {
+  flex: 1;
   padding: 30px 20px;
   max-width: 800px;
   margin: auto;
+  width: 100%;
 }
 
 #code-snippet {
@@ -38,6 +47,8 @@ main {
   margin-bottom: 20px;
   font-size: 18px;
   border-left: 5px solid #ffbd39;
+  font-family: 'Courier New', monospace;
+  box-shadow: inset 0 0 10px rgba(255, 189, 57, 0.2);
 }
 
 textarea {
@@ -50,6 +61,11 @@ textarea {
   background-color: #292929;
   color: #fff;
   border: none;
+}
+
+textarea:focus {
+  outline: 2px solid #ffbd39;
+  box-shadow: 0 0 10px rgba(255, 189, 57, 0.4);
 }
 
 #result {
@@ -91,7 +107,9 @@ footer {
   background-color: #1e1e1e;
   color: #aaa;
   font-size: 14px;
+  text-align: center;
 }
+
 @media (max-width: 600px) {
   h1 {
     font-size: 1.8rem;
@@ -100,14 +118,12 @@ footer {
   #code-snippet {
     font-size: 16px;
     padding: 15px;
-    font-family: 'Courier New', monospace;
-    box-shadow: inset 0 0 10px rgba(255, 189, 57, 0.2);
   }
 
-textarea:focus {
-  outline: 2px solid #ffbd39;
-  box-shadow: 0 0 10px rgba(255, 189, 57, 0.4);
-}
+  textarea {
+    height: 80px;
+    font-size: 14px;
+  }
 
   button {
     width: 100%;

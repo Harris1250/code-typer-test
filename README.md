@@ -1,17 +1,18 @@
 # ⌨️ Code Typer Speed Test
 
-A simple browser game to test how fast and accurately you can type real lines of code.
+A fast and focused web-based game where you test your ability to type real code snippets with precision and speed.
 
 ## 🚀 Features
 
-- Real code snippets (JavaScript, Python, HTML, Git)
-- Accuracy and time tracking
-- Interactive and fun layout
+- Random tech-based code snippets (JavaScript, Python, Git, HTML)
+- Live timer and accuracy tracking
+- Fully responsive layout and glowing UI
 
 ## 🛠️ Tech Stack
 
-- HTML / CSS / JavaScript
-- Deployed via GitHub Pages
+- HTML
+- CSS
+- JavaScript
 
 ## 📦 Run It Locally
 
